@@ -35,16 +35,16 @@ while run:
     keys = pygame.key.get_pressed()
 
     #changes position through button presses
-    if(keys[pygame.K_LEFT]):
+     if(keys[pygame.K_LEFT] and x != 0):
         x -= vel
 
-    if(keys[pygame.K_RIGHT]):
+    if(keys[pygame.K_RIGHT] and x != 460):
         x += vel
 
-    if(keys[pygame.K_UP]):
+    if(keys[pygame.K_UP] and y != 0):
         y -= vel
 
-    if(keys[pygame.K_DOWN]):
+    if(keys[pygame.K_DOWN] and y != 440):
         y += vel
 
     #fills the window, otherwise a red streak is left behind
